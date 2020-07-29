@@ -1,11 +1,12 @@
 # jstltest
 
 Eclipseもmavenも使わないで、
-JSPでEL式とJSTLを動かすサンプル
+JSPでEL式とJSTLを動かすサンプル。
+
 Tomcat 9 + JAVA 8でテスト。
 
 
-# 作業
+# 配置
 
 tomcatのwebappsの下にgit cloneして
 
