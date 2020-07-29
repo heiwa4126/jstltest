@@ -41,6 +41,10 @@ String s = "test";
 ```
 とかは、JSPのクラス(`org.apache.jsp.jstl_jsp`)中でローカル変数になる。
 
+
 # 参考
 
-[JSTL (1.2) のインストール手順 - IT入門書籍 スッキリシリーズ](https://sukkiri.jp/technologies/libraries/jstl/jstl_install.html)
+- [JSTL (1.2) のインストール手順 - IT入門書籍 スッキリシリーズ](https://sukkiri.jp/technologies/libraries/jstl/jstl_install.html)
+- [Jakarta Standard Tag Library - Wikipedia](https://en.wikipedia.org/wiki/Jakarta_Standard_Tag_Library)
+- [Jakarta Expression Language - Wikipedia](https://en.wikipedia.org/wiki/Jakarta_Expression_Language)
+- [Apache Tomcat® - Apache Taglibs Downloads](http://tomcat.apache.org/download-taglibs.cgi)
