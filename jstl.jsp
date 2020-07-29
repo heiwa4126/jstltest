@@ -7,6 +7,7 @@ pageContext.setAttribute("title", "<EL式>と<JSTL>のテスト");
 // session.setAttribute("title", "<EL式>と<JSTL>のテスト");
 // request.setAttribute("title", "<EL式>と<JSTL>のテスト");
 String s = "test";
+final String myClassName = new Object(){}.getClass().getEnclosingClass().getName();
 %>
 <!DOCTYPE html>
 <html>
@@ -15,8 +16,10 @@ String s = "test";
  </head>
  <body>
   <h1><c:out value="${title}"/></h1>
+
   <p>EL式: ${10*2} (JSTLと無関係に使える)</p>
   <p><c:forEach var="i" begin="0" end="10"><c:out value="${i}"/> </c:forEach></p>
+  <p>Class: <%= myClassName %></p>
 
   <h2>スクリプトレットからEL式</h2>
   <p>s = <c:out value="<%= s %>" default="(未定義)"/></p>
