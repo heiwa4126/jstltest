@@ -28,6 +28,18 @@ web.xmlに
 `<el-ignored>false</el-ignored>`
 を書く方法はどうやってもダメだった。
 
+JSTLの変数は、デフォルトではPageContextスコープattributeとして設定される。
+
+> ELが変数を参照する場合， PageContext.findAttribute("変数名") により値が参照されます
+
+引用: [Standard TaglibsによるJSTLの利用](http://www.visards.co.jp/java/jstl/jstl05.html)
+
+どうやら全部のスコープ(ページスコープ、リクエストスコープ、セッションスコープ、アプリケーションスコープ)を横断してさがしてくれるらしい。
+
+```java
+String s = "test";
+```
+とかは、JSPのクラス(`org.apache.jsp.jstl_jsp`)中でローカル変数になる。
 
 # 参考
 

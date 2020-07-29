@@ -20,6 +20,7 @@ final String myClassName = new Object(){}.getClass().getEnclosingClass().getName
   <p>EL式: ${10*2} (JSTLと無関係に使える)</p>
   <p><c:forEach var="i" begin="0" end="10"><c:out value="${i}"/> </c:forEach></p>
   <p>Class: <%= myClassName %></p>
+  <p>Agent: <c:out value="${header['user-agent']}"/></p>
 
   <h2>スクリプトレットからEL式</h2>
   <p>s = <c:out value="<%= s %>" default="(未定義)"/></p>
